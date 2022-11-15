@@ -244,6 +244,7 @@ a {
         padding: 30px;
         border-right: 1px solid #ccc;
         transform: translateX(-500px);
+        transition: 600ms;
     }
     .main-nav ul.main-menu li {
         padding: 10px;
@@ -252,6 +253,10 @@ a {
     }
     .main-nav ul.main-menu li:last-child {
         border-bottom: 0;
+    }
+    .main-nav ul.main-menu.show {
+        transform: translateX(-20px);
+        transition: 600ms;
     }
     .home-cards {
         grid-template-columns: repeat(2, 1fr);
